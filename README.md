@@ -1,6 +1,8 @@
 # Lab 5: Unit Conversion Microservices on Google Cloud Run
  
-Two Python microservices communicating via gRPC, deployed on Google Cloud Run.
+Two Python microservices communicating via gRPC, deployed on Google Cloud Run. 
+
+This is just an overall README file but not to be used for your instructions. See Lab 5 instructions and continue to follow them.
  
 ## Services
  
@@ -13,7 +15,7 @@ Two Python microservices communicating via gRPC, deployed on Google Cloud Run.
 ## Architecture
  
 ```
-Client --HTTP--> Converter API (public) --gRPC+auth--> Conversion Engine (private)
+Client (HTTP) to Converter API (public) (gRPC+auth) to  Conversion Engine (private)
 ```
  
 ## Quick Start (Google Cloud Shell)
