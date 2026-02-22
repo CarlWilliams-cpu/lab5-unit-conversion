@@ -1,0 +1,22 @@
+syntax = "proto3";
+ 
+package conversion;
+ 
+service ConversionEngine {
+    rpc Convert (ConversionRequest) returns (ConversionResult);
+}
+ 
+message ConversionRequest {
+    double value     = 1;
+    string from_unit = 2;
+    string to_unit   = 3;
+}
+ 
+message ConversionResult {
+    double result         = 1;
+    double original_value = 2;
+    string from_unit      = 3;
+    string to_unit        = 4;
+    string category       = 5;
+    string formula        = 6;
+}

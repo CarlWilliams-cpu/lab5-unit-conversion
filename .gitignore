@@ -205,3 +205,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# gRPC generated stubs -- regenerated from proto/ by setup.sh
+*_pb2.py
+*_pb2_grpc.py
